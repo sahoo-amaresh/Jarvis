@@ -1,10 +1,11 @@
+import { Analytics } from "@vercel/analytics/react";
 import { useContext } from "react";
 import { CiMicrophoneOn } from "react-icons/ci";
 import speakGif from "./assets/speak.gif";
 import aiVoice from "./assets/aiVoice.gif";
 import { dataContext } from "./context/UserContext.jsx";
-import "./App.css";
 import Navbar from "./component/Navbar.jsx";
+import "./App.css";
 
 function App() {
   let { recognition, speaking, setSpeaking, prompt, isAIResponse } =
@@ -36,6 +37,8 @@ function App() {
           </div>
         )}
       </div>
+
+      <Analytics />
     </>
   );
 }
