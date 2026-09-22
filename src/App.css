@@ -16,10 +16,12 @@
 }
 
 span {
-  background: linear-gradient(to right, #3ec6fc, #f346ed);
+  background: linear-gradient(to right, #3ec6fc, #ff4bf9);
   font-size: 2vmax;
+  font-weight: 700;
   background-clip: text;
   color: transparent;
+  user-select: none;
 }
 
 button {
@@ -34,7 +36,9 @@ button {
   border: 1px solid #3ec6fc;
   cursor: pointer;
   color: white;
+  font-weight: 500;
   transition: all 0.25s ease-in-out;
+  user-select: none;
 }
 
 button:hover {
